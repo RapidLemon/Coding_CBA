@@ -3,10 +3,10 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Dense, Flatten
 
 # Load the data from file
-X_train = np.loadtxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" +'mock_data_X_train.csv', delimiter=',').reshape((10, 5, 26, 1))
-y_train = np.loadtxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" +'mock_data_y_train.csv', delimiter=',').reshape((10, 26, 1))
-X_test = np.loadtxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" +'mock_data_X_test.csv', delimiter=',').reshape((10, 5, 26, 1))
-y_test = np.loadtxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" +'mock_data_y_test.csv', delimiter=',').reshape((10, 26, 1))
+X_train = np.loadtxt(r"Working scripts\Player movement prediction\Training data\\" +'mock_data_X_train.csv', delimiter=',').reshape((10, 5, 26, 1))
+y_train = np.loadtxt(r"Working scripts\Player movement prediction\Training data\\" +'mock_data_y_train.csv', delimiter=',').reshape((10, 26, 1))
+X_test = np.loadtxt(r"Working scripts\Player movement prediction\Training data\\" +'mock_data_X_test.csv', delimiter=',').reshape((10, 5, 26, 1))
+y_test = np.loadtxt(r"Working scripts\Player movement prediction\Training data\\" +'mock_data_y_test.csv', delimiter=',').reshape((10, 26, 1))
 
 y_train = np.argmax(y_train, axis=2)
 y_test = np.argmax(y_test, axis=2)
