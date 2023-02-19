@@ -23,10 +23,10 @@ def generate_mock_data(num_examples, num_moves, filename):
                 y_test[i, positions[j]] = 1
 
     # Save the data to file
-    np.savetxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" + filename + '_X_train.csv', X_train.reshape((num_examples*num_moves, 26)), delimiter=',')
-    np.savetxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" + filename + '_y_train.csv', y_train.reshape((num_examples, 26)), delimiter=',')
-    np.savetxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" + filename + '_X_test.csv', X_test.reshape((num_examples*num_moves, 26)), delimiter=',')
-    np.savetxt(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\Player movement prediction\Training data\\" + filename + '_y_test.csv', y_test.reshape((num_examples, 26)), delimiter=',')
+    np.savetxt(r"Working scripts\Player movement prediction\Training data\\" + filename + '_X_train.csv', X_train.reshape((num_examples*num_moves, 26)), delimiter=',')
+    np.savetxt(r"Working scripts\Player movement prediction\Training data\\" + filename + '_y_train.csv', y_train.reshape((num_examples, 26)), delimiter=',')
+    np.savetxt(r"Working scripts\Player movement prediction\Training data\\" + filename + '_X_test.csv', X_test.reshape((num_examples*num_moves, 26)), delimiter=',')
+    np.savetxt(r"Working scripts\Player movement prediction\Training data\\" + filename + '_y_test.csv', y_test.reshape((num_examples, 26)), delimiter=',')
 
     # Reshape the data to match the expected input shape of the model
     X_train = X_train.reshape((num_examples, num_moves, 26, 1))
