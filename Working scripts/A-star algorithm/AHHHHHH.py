@@ -53,8 +53,8 @@ def heuristic(goal, neighbor):
 #test the function
 
 # Define node positions
-Node_Connections = open(r"Working scripts\A-star algorithm\Graphs\Node_Connections.json", "r")
-Graph_file = open(r"Working scripts\A-star algorithm\Graphs\Graph.json", "r")
+Node_Connections = open(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\A-star algorithm\Graphs\Node_Connections.json", "r")
+Graph_file = open(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\A-star algorithm\Graphs\Graph.json", "r")
 
 Node_Connection = Graph_file.read()
 Graph = Node_Connections.read()
@@ -65,7 +65,7 @@ Graph_file.close()
 node_pos = json.loads(Node_Connection)
 graph = json.loads(Graph)
 
-image = pygame.image.load("map.png")
+image = pygame.image.load(r"C:\Users\Tocom\OneDrive\Pictures\Camera Roll\map.png")
 
 # Get the current width and height of the image
 original_width, original_height = image.get_size()

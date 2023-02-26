@@ -71,10 +71,10 @@ def Connect_Nodes(nodes, image_path):
 Graph = Generate_Graph()
 Node_Connections = Connect_Nodes(Graph, r"C:\Users\Tocom\OneDrive\Pictures\Camera Roll\img.png")
 
-f = open(r"Working scripts\A-star algorithm\Graphs\Graph.json", "w")
+f = open(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\A-star algorithm\Graphs\Graph.json", "w")
 f.write(str(json.dumps(Graph)))
 f.close()
 
-f = open(r"Working scripts\A-star algorithm\Graphs\Node_Connections.json", "w")
+f = open(r"C:\Users\Tocom\OneDrive\Documents\python stuff\Coding CBA\Working scripts\A-star algorithm\Graphs\Node_Connections.json", "w")
 f.write(str(json.dumps(Node_Connections)))
 f.close()
